@@ -23,7 +23,7 @@ public class MyController {
 	@Autowired
 	private CourseService courseService;
 	
-	@GetMapping("/home")
+	@GetMapping("/")
 	public String home() {
 		return "This is course application";
 	}
