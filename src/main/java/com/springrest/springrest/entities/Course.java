@@ -1,11 +1,22 @@
 package com.springrest.springrest.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
 	
+	@Id
 	private long id;
 	private String title;
 	private String description;
 	
+	
+	
+	public Course() {
+		super();
+	}
+
 	public Course(long id, String title, String description) {
 		super();
 		this.id = id;
